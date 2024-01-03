@@ -25,6 +25,7 @@
         packages = with pkgs; [
           # valgrind
           nixpkgs-fmt
+          cmake
 
           rust-bin.stable.latest.default
           cargo-audit

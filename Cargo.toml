@@ -13,6 +13,9 @@ categories = ["api-bindings"]
 links = "zint"
 exclude = ["flake.*", "rust-toolchain.toml", ".*"]
 
+[features]
+vendored = ["dep:cmake"]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dev-dependencies]
@@ -22,3 +25,4 @@ libc = "0.2.147"
 
 [build-dependencies]
 bindgen = "0.66"
+cmake = { version = "0.1", optional = true }
