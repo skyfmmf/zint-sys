@@ -23,7 +23,7 @@
     {
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
-          valgrind
+          # valgrind
           nixpkgs-fmt
 
           rust-bin.stable.latest.default
@@ -32,7 +32,7 @@
 
         buildInputs = with pkgs; [
           rustPlatform.bindgenHook
-          zint
+          # zint
         ];
 
         shellHook = ''
